@@ -31,9 +31,9 @@ app.get('/:timestamp', function (req, res) {
 	}
 	
 	if (Object.keys(result).length === 0) {
-			res.send(404);
+		res.send(404);
 	} else {
-			res.json(result);
+		res.json(result);
 	}
 	
 	
