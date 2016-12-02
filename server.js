@@ -18,17 +18,17 @@ app.get('/:timestamp', function (req, res) {
 		}
 	}
 	
-		if (time === undefined) {
-			result = {
-				'unix': null,
-				'natural': null
-			};
-		} else {
-			result = {
-				'unix': input,
-				'natural': time
-			};
-		}
+	if (time === undefined) {
+		result = {
+			'unix': null,
+			'natural': null
+		};
+	} else {
+		result = {
+			'unix': input,
+			'natural': time
+		};
+	}
 	
 	if (Object.keys(result).length === 0) {
 			res.send(404);
